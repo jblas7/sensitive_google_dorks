@@ -1,0 +1,73 @@
+READ THE README.MD ARCHIEVE BEFORE THAT
+* Please note that this is only a generic prototype, for a better use you will need to combine this info 
+with other dorks like site:"domain.name" or changing the "" text search to include possible variants, 
+this is only a template to use for reference
+
+
+text:"TARGET" & ext:txt # "target" key word to find some general info related to someone or some business
+
+ext:sql # search of .sql archieves for find public databases on the internet
+
+ext:xls # Microsoft Excel archieves, very common on financial, personal or entrepeneur activity (usually moved in plain text
+without encryption,commonly unsafer than SQL archieves)
+
+inurl:".php?id=" # search for possible databases vulnerable to SQL Injection (Only posibility)
+
+inurl:".php?cmd=" # search for possible XSS vulnerable (Only posibility)
+
+site:"domain.name" AND (ext:action | ext:struts | ext:do) # ".action", ".struts", o ".do" for Java
+
+ext:cnf # search of public archieve configurations on .cnf, commonly for linux systems
+
+ext:config # another type of configuration search on .config
+
+ext:xml # commonly used for structured data transport
+
+inurl:/includes/ & ext:inc & inurl:connect | inurl:dbconnect & -site:phpkode.com # data base explicit crendentials
+
+site:"blob.core.windows.net" AND intext:confidential filetype:pdf # Microsoft Azure blob info with possible confidential info
+
+site:.es ext:pdf "contrato" # confidential registers, in this case related to a contract
+
+ext:log & intext:"admin" # public logs of administrator activities on systems or applications
+
+inurl:/sym/root/ & intext:"Parent Directory" # WordPress MySQL details
+
+intext:"root" # privileged user of Linux, very common in server settings and maintenance
+
+inurl:"passes" OR inurl:"passwords" OR inurl:"credentials" -search -download -techsupt -git -games -gz -bypass -exe filetype:txt "@gmail OR @outlook OR @yahoo OR @hotmail # search of phising page logs * Mostly dont work (obviously)
+
+site:.es # search of specific domain extensions (In this case Spain extension), very useful to search for information
+ from government agencies or public administration, among many other things
+
+'.root'. inurl:/phpmyadmin intitle:localhost # possible phpMyAdmin misconfigured instances
+
+inurl:backup.zip # search of backups indexed, commonly created with .zip extensions, also try other variants extension like .7z or .tar.gz (Linux)
+
+inurl:config.php dbpasswd # possible database password exposed * Try to change "dbpasswd" for "pass","password" or variants
+
+intext:"administrator" & intext:"password" # search of public login keys, you can change "administrator" for "admin" or other
+type of commontly use words for design administrator for a wider capture range
+
+
+# PORT SEACHES: following ports are the usual ones for the services to be mentioned, however these some of it may change and all possible
+ feasible options should be checked
+
+inurl *:8080/login.php # alternative of port 80 (http), commonly use for testing a web before deployment, may contain sensitive
+ website info or hidden details
+
+inurl *:21 # search of FTP servers on the port 21
+
+inurl *:8080/stream # Search of web cameras * Keep caution with cameras with internet access
+
+inurl *:25 # Search of email servers on his main port 25 (SMTP)
+
+inurl *:80/setup.cgi # Routers configuration with setup.cgi
+
+inurl *:8443/metricts # Search of health management public info communications * able to change "metrics" for "personaldata" or any variant of info and language denomination
+
+inurl *:8443/security # secure configs on alternative HTTPS port
+
+
+
+
