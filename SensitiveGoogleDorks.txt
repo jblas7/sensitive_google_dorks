@@ -1,7 +1,7 @@
 READ THE README.MD ARCHIEVE BEFORE THAT
 * Please note that this is only a generic prototype, for a better use you will need to combine this info 
 with other dorks like site:"domain.name" or changing the "" text search to include possible variants, 
-this is only a template to use for reference
+this is only a template to use for reference,highly recommended to combine this info with Maltego, SpiderFoot or other infosec tools for a broader perspective of the information collected
 
 
 text:"TARGET" & ext:txt # "target" key word to find some general info related to someone or some business
