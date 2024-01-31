@@ -1,4 +1,4 @@
-READ THE README.MD ARCHIEVE BEFORE THAT
+READ THE README.md ARCHIEVE BEFORE THAT
 * Please note that this is only a generic prototype, for a better use you will need to combine this info 
 with other dorks like site:"domain.name" or changing the "" text search to include possible variants, 
 this is only a template to use for reference,highly recommended to combine this info with Maltego, SpiderFoot or other infosec tools for a broader perspective of the information collected
@@ -11,9 +11,13 @@ ext:sql # search of .sql archieves for find public databases on the internet
 ext:xls # Microsoft Excel archieves, very common on financial, personal or entrepeneur activity (usually moved in plain text
 without encryption,commonly unsafer than SQL archieves)
 
-inurl:".php?id=" # search for possible databases vulnerable to SQL Injection (Only posibility)
+inurl:".php?id=" -git # search for possible databases vulnerable to SQL Injection (Only posibility)
 
-inurl:".php?cmd=" # search for possible XSS vulnerable (Only posibility)
+inurl:".php?cmd=" -git # search for possible XSS vulnerable (Only posibility)
+
+inurl:"cgi-bin/" intext:"whoami" -git # possible systems able to escalate privileges with a reverse shell * Probe also without "whoami"
+
+intext:"PIN de seguridad" OR intext:"Activation PIN" OR intext:"PIN" OR intext:"Key" OR filetype:txt OR filetype:SQL OR filetype:xls # sim swapping security PIN for request a new SIM
 
 site:"domain.name" AND (ext:action | ext:struts | ext:do) # ".action", ".struts", o ".do" for Java
 
@@ -48,26 +52,6 @@ inurl:config.php dbpasswd # possible database password exposed * Try to change "
 
 intext:"administrator" & intext:"password" # search of public login keys, you can change "administrator" for "admin" or other
 type of commontly use words for design administrator for a wider capture range
-
-
-# PORT SEACHES: following ports are the usual ones for the services to be mentioned, however these some of it may change and all possible
- feasible options should be checked
-
-inurl *:8080/login.php # alternative of port 80 (http), commonly use for testing a web before deployment, may contain sensitive
- website info or hidden details
-
-inurl *:21 # search of FTP servers on the port 21
-
-inurl *:8080/stream # Search of web cameras * Keep caution with cameras with internet access
-
-inurl *:25 # Search of email servers on his main port 25 (SMTP)
-
-inurl *:80/setup.cgi # Routers configuration with setup.cgi
-
-inurl *:8443/metricts # Search of health management public info communications * able to change "metrics" for "personaldata" or any variant of info and language denomination
-
-inurl *:8443/security # secure configs on alternative HTTPS port
-
 
 
 
