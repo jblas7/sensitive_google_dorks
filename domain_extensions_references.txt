@@ -1,0 +1,166 @@
+* Each domain extension has a meaning but not always had to have a direct relation, commontly are used 
+only .com, .net and .me domains.
+
+.com
+.org
+.net
+.me  
+.edu
+.gov # Guvernamental US govern domain
+.mil # Official U.S. Department of Defense organization in the United States
+.xyz
+.info
+.biz
+.tv
+.mobi
+.name
+.pro
+.jobs
+.travel
+.museum
+.aero
+.coop
+.asia
+.cat
+.tel
+
+# CONTRY DOMAIN EXTENSIONS
+	
+Albania - .al 
+
+Antigua - .ag
+
+Argentina - .com.ar
+
+Asia - .asia
+
+Australia - .com.au 
+
+Austria - .at
+
+Barbados - .bb 
+
+Belgium - .be
+
+Bolivia - .bo
+
+Brazil - .com.br 
+
+Bulgaria - .bg 
+
+Cameroon - .cm
+
+Canada - .ca 
+
+Chile - .cl
+
+China - .cn
+
+Colombia - .com.co
+
+Congo Republic - .cg
+
+Costa Rica - .co.cr
+
+Czech Republic - .cz
+
+Denmark - .dk
+
+Ecuador - .ec
+
+European Union - .eu 
+
+Finland - .fi
+
+France - .fr 
+
+Germany - .de 
+
+Greece - .gr 
+
+Haiti - .ht
+
+Hong Kong - .hk 
+
+Iceland - .is
+
+India - .in
+
+Indonesia - .co.id 
+
+Iran - .ir 
+
+Ireland - .ie 
+
+Italy - .it 
+
+Japan - .jp 
+
+Jordan - .jo 
+
+Laos - .la
+
+Latvia - .lv
+
+Mauritania - .mr
+
+Mexico - .com.mx 
+
+Montenegro - .me
+
+Netherlands - .nl
+
+Norway - .no 
+
+Pakistan - .pk 
+
+Palestine - .ps
+
+Panama - .com.pa 
+
+Peru - .pe
+
+Philippines - .ph
+
+Poland - .pl
+
+Portugal - .pt
+Puerto Rico - .com.pr
+
+Romania - .ro
+
+Russian Federation - .ru 
+
+Sierra Leone - .sl
+
+Singapore - .sg 
+
+Slovakia - .sk
+
+Slovenia - .si
+
+South Korea - .kr 
+
+Spain - .es
+
+Sweden - .se
+
+Switzerland - .ch
+
+Taiwan - .tw
+
+Turkey - .com.tr
+
+Tuvalu - .tv
+
+Ukraine - .ua 
+
+United Kingdom - .co.uk 
+
+USA - .us 
+
+Uzbekistan - .uz
+
+Venezuela - .com.ve
+
+Vietnam - .vn
