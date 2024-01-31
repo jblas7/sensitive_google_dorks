@@ -20,7 +20,6 @@ only .com, .net and .me domains.
 .museum
 .aero
 .coop
-.asia
 .cat
 .tel
 
