@@ -17,7 +17,7 @@ inurl:".php?cmd=" -git # search for possible XSS vulnerable (Only posibility)
 
 inurl:"cgi-bin/" intext:"whoami" -git # possible systems able to escalate privileges with a reverse shell * Probe also without "whoami"
 
-intext:("Security PIN" OR "Activation PIN" OR "PIN" OR "Key") AND (filetype:txt OR filetype:SQL OR filetype:xls) # sim swapping security PIN for request a new SIM
+intext:("Security PIN" OR "Activation PIN" OR "Phone PIN" OR "Phone Key") AND (filetype:txt OR filetype:SQL OR filetype:xls) -git # sim swapping security PIN for request a new SIM
 
 site:"domain.name" AND (ext:action | ext:struts | ext:do) # ".action", ".struts", o ".do" for Java
 
