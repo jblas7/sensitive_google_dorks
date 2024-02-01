@@ -1,0 +1,20 @@
+A little guide of how to be more precise using the dorks
+
+- "-git": to use the char "-" will exclude one specific work, in this case for exclude Git/GitHub ressults according to the search, you can use this also 
+as a filter to find easier the person you are searching for
+
+- Use "-" to exlude unwanted subdomains, exaple: site:university.edu -site:schedules.university.edu
+
+- "site:": always use a domain filter, otherwise results will be so much general for a good catch
+
+- "AND/OR": very recommendable to use AND & OR for adjust the searches for different types of info, format or domain
+
+- "": use of specific key words with the use of OR
+
+-Search specific domains extensions, however are commonly used .com/.net domain or own country extension (mentioned on https://github.com/jblas7/sensitive_google_dorks/blob/main/domain_extensions_references.txt)
+
+- Make the requests from different regions for access to avoid the georestriction, also a region out of Europe for bypass the results that have been deleted in accordance with 
+European data protection law (more info about it on https://support.google.com/legal/answer/10769224?hl=en)
+
+
+
