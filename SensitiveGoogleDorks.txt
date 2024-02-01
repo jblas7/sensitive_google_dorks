@@ -29,6 +29,9 @@ ext:xml # commonly used for structured data transport
 
 inurl:/includes/ & ext:inc & inurl:connect | inurl:dbconnect & -site:phpkode.com # data base explicit crendentials
 
+site:waybackmachine.org info filetype:txt OR filetype:csv OR filetype:xls OR filetype:pdf OR filetype:doc OR filetype:docx OR filetype:ppt OR filetype:pptx # dork for search past info previously saved in web 
+archieve (the biggest repository of pages in the world) * info is to much generally try something specific
+
 site:"blob.core.windows.net" AND intext:confidential filetype:pdf # Microsoft Azure blob info with possible confidential info
 
 site:.es ext:pdf "contrato" # confidential registers, in this case related to a contract
